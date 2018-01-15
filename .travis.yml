@@ -9,9 +9,8 @@ deploy:
   provider: releases
   api_key:
     secure: bXi2mhcQIcwEkNW1rsUzNP9ZPwRMn4L1gLlPUYhyMLniLtE+csoBF1KaU9UxHHQIUm7Dz90NGOURydEKgOxS+taILhAN/p9qxg56Gh2UNqIwga/Ao2b/RietysxVsKgVPSuRed4x6InwNdYgplbyvz2JONLIbzRz1BDzOzGo+15XwnR4PXocPlEGvNA/kB+pXpfznHIVe3crFONPLcMtEn9uVsNM/6ES8Dh3zXQZ10WoHJ3M6k4TUgDovMv0+mrDLqQA+9tqeVeY9vLCbHw9cjvKzU8xh9weiciESxbEXlRT9iI6Pc7eyVSzc3wLPwqTvO+WIax+pLzrHvCpeG0onemFw9Ojc6ll8wpe+35FfF9JUHPcy/KIm3iV8bJrJzJZnZnILZ3/kb7qk7zxq0YpcE3pih1mVrv986ApI0nWfuO/+PNYXSn0Gne70xaHamDbY2VEyffUxP9VyRikZLN0uNERpuH2Y5gmY0Ao4/LdsWJJTHouCMu8WmRDCY2RykawrZ6T/tOqkbeCs01PxzcT7SJtTFuC6UidEWx5qQe5A7r5qiX8+vMmXWK/zUWJDHi91DVdoXmGBjDTdA8+uXPRfIaZJSVBcYDbgi2cH5LzYaYBp1rFYE8ivdYJisAb6mMr7KXPF0e12jkGfY7EyPZLBr1l1Lr5qz+t5h6opEYyVFc=
-  file:
-    - dist/css/style.css
-    - dist/js/common.js
+  file_glob: true
+  file: dist/*
   skip_cleanup: true
   on:
     repo: forrestLyman/travis-gulp-demo
