@@ -17,4 +17,4 @@ deploy:
   target-branch: wp-release
   on:
     branch: master
-    
+
