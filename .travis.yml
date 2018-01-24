@@ -13,7 +13,7 @@ deploy:
     - dist/css/*
     - dist/js/*
   skip_cleanup: true
+  local-dir: dist
   target-branch: master
   on:
     repo: forrestLyman/travis-gulp-demo
-    tags: true
