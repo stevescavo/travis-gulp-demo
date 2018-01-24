@@ -6,9 +6,6 @@ before_script:
 - npm install
 script: gulp production
 before_deploy:
-- rm -rf node_modules/
-- rm -rf gulp/
-- rm -rf static-src/
 - rm .gitignore
 deploy:
   provider: pages
