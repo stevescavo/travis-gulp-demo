@@ -7,6 +7,7 @@ before_script:
 script: gulp production
 before_deploy:
 - rm -rf node_modules/
+- rm -rf gulp/
 - rm -rf static-src/
 deploy:
   provider: pages
