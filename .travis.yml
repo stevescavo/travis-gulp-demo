@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+- node
+before_script:
+- npm install -g gulp-cli
+- npm install
+script: gulp production
+before_deploy:
+- rm -rf node_modules/
+- rm -rf gulp/
+- rm -rf static-src/
+- rm .gitignore
+deploy:
+  provider: pages
+  github-token: $GITHUB_TOKEN
+  skip_cleanup: true
+  target-branch: wp-release
+  on:
+    branch: master
+
