@@ -9,11 +9,11 @@ before_deploy:
 - rm -rf node_modules/
 - rm -rf gulp/
 - rm -rf static-src/
+- rm .gitignore
 deploy:
   provider: pages
   github-token: $GITHUB_TOKEN
   skip_cleanup: true
-  keep-history: true
   target-branch: wp-release
   on:
     branch: master
