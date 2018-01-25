@@ -11,7 +11,7 @@ before_deploy:
 - rm -rf static-src/
 - rm .gitignore
 deploy:
-  provider: releases
+  provider: pages
   github-token: $GITHUB_TOKEN
   skip_cleanup: true
   target-branch: wp-release
